@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/GetImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:text="GetImage" />
+
+    <Button
+        android:id="@+id/Detect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/GetImage"
+        android:text="Detect" />
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/GetImage"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" />
+   
+    <TextView
+        android:id="@+id/tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_alignTop="@+id/Detect"
+        android:layout_toLeftOf="@+id/Detect"
+        android:layout_toStartOf="@+id/Detect"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="state"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <FrameLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility ="gone"
+        android:clickable ="true" 
+        android:id="@+id/waitting">
+        <ProgressBar 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:gravity="center"/>
+        <TextView
+	        android:id="@+id/age_gender"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+			android:drawableLeft="@drawable/male"
+			android:drawableStart="@drawable/male"
+			android:background="@drawable/hint"
+			android:text="123"
+			android:visibility ="invisible"
+			android:textColor="#ffff00ff"
+			android:textSize="22sp"
+	        android:gravity="center" />
+    </FrameLayout>
+
+</RelativeLayout>

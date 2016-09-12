@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.fzu.imageimocc.MainActivity" >
+
+    <TextView
+        android:id="@+id/tv_xiaosu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="40dp"
+        android:text="小苏美图"
+        android:textSize="40sp" />
+
+    <Button
+        android:id="@+id/btn_PrimaryColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="14dp"
+        android:text="PrimaryColor" />
+
+    <Button
+        android:id="@+id/btn_ColorMatrix"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ColorMatrix" />
+
+    <Button
+        android:id="@+id/btn_PixelsEffect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PixelsEffect" />
+
+    <Button
+        android:id="@+id/btn_MeiTu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MeiTu" />
+    
+    <Button
+        android:id="@+id/btn_Howold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HowOld" />
+
+</LinearLayout>
